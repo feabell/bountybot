@@ -52,7 +52,7 @@ class Zkb():
                 print "[Error]", e
             else:
                 if len(parsed_json) > 0:
-                    return [str(parsed_json[0]['killID']), parsed_json[0]['killTime']]
+                    return [str(parsed_json[0]['killmail_id']), parsed_json[0]['killmail_time']]
         
         return None
 
