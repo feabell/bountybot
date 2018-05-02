@@ -30,7 +30,7 @@ class Zkb():
             "User-Agent": BountyConfig.USER_AGENT,
             "Accept-encoding": "gzip"
         }
-        url = "https://zkillboard.com/api/solarSystemID/{}/limit/{}/".format(solarSystemID, limit)
+        url = "https://zkillboard.com/api/solarSystemID/{}/".format(solarSystemID)
         
         try:
             request = urllib2.Request(url, None, headers)
